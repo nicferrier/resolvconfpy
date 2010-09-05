@@ -1,0 +1,16 @@
+= README =
+
+resolvconfpy is a python implementation of the
+[http://en.wikipedia.org/wiki/Resolvconf resolvconf program]
+which is used by various dhcp clients.
+
+== To Do ==
+
+I need to make a sensible pypi installation for this that will make it
+available in a way that your dhcp client can see it.
+
+resolvconf //should// store it's resolvconf file in 
+{{{ /etc/resolvconf/run/resolv.conf }}} but right now we store it by
+default in {{{ /var/lib/resolvconfpy }}}. The location can be changed
+by the {{{ -D }}} switch.
+
